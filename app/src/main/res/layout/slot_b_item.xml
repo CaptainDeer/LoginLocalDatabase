@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/taskCard"
+    android:layout_width="@dimen/card_width"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/card_margin"
+    android:layout_marginBottom="@dimen/card_margin"
+    app:cardBackgroundColor="@color/blue"
+    app:cardCornerRadius="@dimen/card_corner"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_task"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tv_margin"
+            android:layout_marginTop="@dimen/tv_margin"
+            android:layout_marginBottom="@dimen/tv_margin"
+            android:textColor="@color/white"
+            android:text="Lavar la camioneta o si no a ver esta cosa cuando marca que ya se paso de lanza"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_task"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
